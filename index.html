@@ -1,335 +1,444 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>استعلام کد گواهی</title>
 
+
 <style>
 
+@font-face {
+    font-family: IRANSans;
+    src: url("IRANSans.woff2");
+}
+
+
 *{
-    margin:0;
-    padding:0;
     box-sizing:border-box;
 }
 
+
 body{
-    background:#f5f5f5;
-    font-family:Tahoma,Arial,sans-serif;
-    color:#555;
+
+    margin:0;
+
+    font-family:IRANSans,Tahoma,Arial,sans-serif;
+
+    background:#f0f0f0;
+
+    font-size:13px;
+
+    color:#333;
+
+    line-height:1.8;
+
 }
 
-.wrapper{
-    width:95%;
-    max-width:720px;
-    margin:30px auto;
+
+.container{
+
+    width:100%;
+
+    max-width:850px;
+
+    margin:35px auto;
+
+    padding:15px;
+
 }
+
+
 
 .card{
+
     background:#fff;
-    border-radius:8px;
+
+    border-radius:6px;
+
     padding:35px;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
 }
 
-.item{
-    margin:18px 0;
-    line-height:2;
-    font-size:19px;
+
+
+.row{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    margin-bottom:18px;
+
+    font-size:14px;
+
 }
+
+
 
 .label{
+
+    width:180px;
+
     font-weight:bold;
-    color:#666;
+
+    color:#555;
+
 }
+
+
 
 .value{
+
+    flex:1;
+
     color:#4c83b2;
-    font-weight:bold;
+
+    font-weight:500;
+
 }
 
-.link-box{
-    margin-top:12px;
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
 
-.link-input{
-    border:1px solid #cfcfcf;
-    background:#fff;
-    padding:9px;
-    width:340px;
-    font-size:15px;
-    direction:ltr;
-    color:#666;
-}
-
-.copy{
-    font-size:28px;
-    color:#4c83b2;
-}
 
 hr{
-    margin:40px 0;
-    border:none;
+
+    border:0;
+
     border-top:1px solid #ddd;
+
+    margin:35px 0;
+
 }
+
+
+
+.link{
+
+    direction:ltr;
+
+    background:#fafafa;
+
+    border:1px solid #ddd;
+
+    padding:10px;
+
+    border-radius:4px;
+
+    width:100%;
+
+    color:#555;
+
+}
+
+
+
+.copy{
+
+    margin-top:8px;
+
+    color:#4c83b2;
+
+    font-size:20px;
+
+}
+
+
 
 .english{
+
     direction:ltr;
+
     text-align:left;
-    font-family:Arial;
+
 }
 
-.english .item{
-    font-size:18px;
-}
+
 
 .button{
-    margin-top:40px;
+
     text-align:center;
+
+    margin-top:40px;
+
 }
+
+
 
 .button a{
 
-display:inline-block;
-background:#f6a347;
-color:#fff;
-text-decoration:none;
-padding:12px 34px;
-border-radius:5px;
-font-size:19px;
-font-weight:bold;
+    display:inline-block;
+
+    background:#f6a347;
+
+    color:white;
+
+    padding:10px 35px;
+
+    border-radius:5px;
+
+    text-decoration:none;
+
+    font-size:14px;
 
 }
+
+
 
 .button a:hover{
 
-background:#e98c22;
+    background:#e98c22;
 
 }
+
+
 
 @media(max-width:700px){
 
+
+.label{
+
+    width:100%;
+
+    margin-bottom:5px;
+
+}
+
+
 .card{
 
-padding:22px;
+    padding:20px;
 
 }
 
-.item{
-
-font-size:17px;
 
 }
 
-.link-box{
-
-flex-direction:column;
-align-items:flex-start;
-
-}
-
-.link-input{
-
-width:100%;
-
-}
-
-}
 
 </style>
 
+
 </head>
+
 
 <body>
 
-<div class="wrapper">
+
+<div class="container">
+
 
 <div class="card">
 
-<div class="item">
 
-<span class="label">
+
+<div class="row">
+
+<div class="label">
 استعلام کد گواهی :
-</span>
+</div>
 
-<span class="value">
+<div class="value">
 imatconf14-01190473
-</span>
+</div>
 
 </div>
 
-<div class="item">
 
-<span class="label">
+
+
+<div class="row">
+
+<div class="label">
 عنوان رویداد :
-</span>
+</div>
 
-<span class="value">
+<div class="value">
 چهاردهمین کنفرانس بین‌المللی مهندسی مواد و متالورژی
-</span>
+</div>
 
 </div>
 
-<div class="item">
 
-<span class="label">
+
+<div class="row">
+
+<div class="label">
 نوع گواهینامه :
-</span>
+</div>
 
-<span class="value">
+<div class="value">
 ارائه مقاله
-</span>
+</div>
 
 </div>
 
-<div class="item">
 
-<span class="label">
+
+
+<div class="row">
+
+<div class="label">
 عنوان مقاله :
-</span>
+</div>
 
-<span class="value">
+<div class="value">
 مروری بر روش‌های استحکام‌سازی آلیاژهای پایه روی
-</span>
+</div>
 
 </div>
 
-<div class="item">
 
-<span class="label">
+
+
+<div class="row">
+
+<div class="label">
 نویسندگان :
-</span>
+</div>
 
-<span class="value">
+<div class="value">
 محمدجواد ملکیان
-</span>
+</div>
 
 </div>
 
-<div class="item">
 
-<span class="label">
+
+<div class="row">
+
+<div class="label">
 لینک دسترسی سریع :
-</span>
+</div>
 
-<div class="link-box">
+<div class="value">
+
+<input class="link"
+value="https://verifypaper.github.io/imatconf14-01190473"
+readonly>
+
 
 <div class="copy">
 📋
 </div>
 
-<input
-class="link-input"
-type="text"
-value="https://newvcert.ir/users/qr.php/github.io/imatconf14-01190473/"
-readonly>
 
 </div>
 
 </div>
+
+
 
 <hr>
 
+
+
 <div class="english">
 
-<div class="item">
 
-<b>Certificate Code Inquiry :</b>
+<div class="row">
 
-<span class="value">
+<div class="label">
+Certificate Code :
+</div>
 
+<div class="value">
 imatconf14-01190473
-
-</span>
+</div>
 
 </div>
 
-<div class="item">
 
-<b>Event Title :</b>
 
-<span class="value">
+<div class="row">
+
+<div class="label">
+Event Title :
+</div>
+
+<div class="value">
 
 14th International Conference on Materials Engineering & Metallurgy
 
-</span>
+</div>
 
 </div>
 
-<div class="item">
 
-<b>Certificate Type :</b>
 
-<span class="value">
+<div class="row">
+
+<div class="label">
+Certificate Type :
+</div>
+
+<div class="value">
 
 Paper Presentation
 
-</span>
+</div>
 
 </div>
 
-<div class="item">
 
-<b>Article Title :</b>
 
-<span class="value">
+
+<div class="row">
+
+<div class="label">
+Article Title :
+</div>
+
+<div class="value">
 
 Review of strengthening methods for zinc-based alloys
-</span>
 
 </div>
 
-<div class="item">
+</div>
 
-<b>Authors :</b>
 
-<span class="value">
+
+<div class="row">
+
+<div class="label">
+Authors :
+</div>
+
+<div class="value">
 
 MohammadJavad Malekian
 
-</span>
-
-</div>
-
-<div class="item">
-
-<b>Quick Access Link :</b>
-
-<div class="link-box">
-
-<div class="copy">
-
-📋
-
-</div>
-
-<input
-class="link-input"
-type="text"
-value="https://"https://newvcert.ir/users/qr.php/github.io/imatconf14-01190473/"
-readonly>
-
 </div>
 
 </div>
+
+
+</div>
+
+
 
 <div class="button">
 
 <a href="#">
+
 مشاهده گواهینامه
+
 </a>
 
 </div>
 
-</div>
+
 
 </div>
 
+
 </div>
+
+
 
 </body>
+
 </html>
