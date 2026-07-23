@@ -502,23 +502,28 @@ https://newvcert.github.io/imatconf14-01190473
 
 
 
-<div class="button">
-
-<a href="#">
-
-مشاهده گواهینامه
-
-</a>
-
+</div><div class="button"><a href="#" onclick="openCertificate();return false;">مشاهده گواهینامه</a></div>
+<div id="certificateModal" class="modal">
+<span class="close" onclick="closeCertificate()">&times;</span>
+<div class="toolbar">
+<button onclick="zoomIn()">+</button>
+<button onclick="zoomOut()">-</button>
+<button onclick="document.getElementById('certImg').requestFullscreen()">⤢</button>
+<a href="certificate-imatconf14-MM-01.pdf" download>⬇ PDF</a>
+<button onclick="printCertificate()">🖨</button>
 </div>
-
-
-
-
-</div>
-
-
-</div>
+<img id="certImg" class="modal-content" src="certificate-imatconf14-MM-01.jpg">
+</div></div></div>
+<script>
+let scale=1;
+function openCertificate(){document.getElementById('certificateModal').style.display='block';}
+function closeCertificate(){document.getElementById('certificateModal').style.display='none';}
+function zoomIn(){scale+=0.1;certImg.style.transform='scale('+scale+')';}
+function zoomOut(){scale=Math.max(.2,scale-.1);certImg.style.transform='scale('+scale+')';}
+certImg?.addEventListener?.('wheel',e=>{e.preventDefault();scale+=e.deltaY<0?0.1:-0.1;if(scale<.2)scale=.2;certImg.style.transform='scale('+scale+')';});
+function printCertificate(){let w=window.open('');w.document.write('<img src="certificate-imatconf14-MM-01.jpg" style="width:100%">');w.print();w.close();}
+window.onclick=e=>{if(e.target.id==='certificateModal')closeCertificate();}
+</script></body></html>
 
 
 </body>
